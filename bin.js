@@ -1,5 +1,5 @@
 class Bin{
-    constructor(x,y,length,height){
+    constructor(x,y,width,height){
         var options={
             isStatic : true
         }
@@ -9,8 +9,10 @@ class Bin{
         this.height=height
     }
 display(){
+    console.log("bin")
     rectMode(CENTER)
-    rectMode(this.body.position.x,this.body.position.y,this.width,this.height)
+    fill("yellow")
+    rect(this.body.position.x,this.body.position.y,this.width,this.height)
 }
 
 

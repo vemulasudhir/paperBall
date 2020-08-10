@@ -17,8 +17,10 @@ function setup() {
 
 	//Create the Bodies Here.
 ball = new Ball(100,600,40)
-bin1 = new Bin(600,630,100,20)
-bin1.shapeColor= "yellow"
+bin1 = new Bin(900,680,170,20)
+bin2 = new Bin(810,627,20,130)
+bin3 = new Bin(980,627,20,130)
+//bin1.shapeColor= "yellow"
 
 ground = Bodies.rectangle(width/2, 680, width, 10 , {isStatic:true} );
 World.add(world, ground);
@@ -35,8 +37,8 @@ function draw() {
   
 ball.display()
 bin1.display()
-
-
+bin2.display()
+bin3.display()
 
   drawSprites();
  
