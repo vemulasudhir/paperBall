@@ -7,11 +7,12 @@ class Bin{
         World.add(world,this.body)
         this.width=width
         this.height=height
+       // this.dustbin = loadImage("dustbin.png")
     }
 display(){
     console.log("bin")
     rectMode(CENTER)
-    fill("yellow")
+    fill("white")
     rect(this.body.position.x,this.body.position.y,this.width,this.height)
 }
 

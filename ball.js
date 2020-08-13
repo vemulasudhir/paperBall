@@ -9,9 +9,11 @@ class Ball{
     this.body = Bodies.circle(x,y,radius,options)
     World.add(world,this.body)
     this.radius = radius
+    this.paper=loadImage("paper.png")
+    
     }
     display(){
-        ellipseMode(RADIUS)
-        ellipse(this.body.position.x,this.body.position.y,this.radius,this.radius)
+        imageMode(CENTER)
+        image(this.paper,this.body.position.x,this.body.position.y,this.radius,this.radius)
     }
 }
